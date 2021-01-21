@@ -1,0 +1,31 @@
+{% comment %}
+  Footer for a standard workshop.
+{% endcomment %}
+<footer>
+  <hr/>
+  <div>
+    This page have been adapted from <a href="https://github.com/carpentries/workshop-template">Workshop Template</a> by 
+    <a href="{{ site.carpentries_site }}">the Carpentries</a>.
+  </div> 
+  <div class="row">
+    <div class="col-md-6" align="left">
+      <h4>
+	Copyright &copy; 2016–{{ 'now' | date: "%Y" }}
+	{% if site.carpentry == "swc" %}
+	<a href="{{ site.swc_site }}">Software Carpentry</a>
+	{% elsif site.carpentry == "dc" %}
+	<a href="{{ site.dc_site }}">Data Carpentry</a>
+	{% elsif site.carpentry == "lc" %}
+	<a href="{{ site.lc_site }}">Library Carpentry</a>
+	{% elsif site.carpentry == "cp" %}
+	<a href="{{ site.carpentries_site }}">The Carpentries</a>
+	{% endif %}
+      </h4>
+    </div>
+    <div class="col-md-6" align="right">
+      <h4>
+	<a href="mailto:{{ site.email }}">Contact Training at eScience Center </a>
+      </h4>
+    </div>
+  </div>
+</footer>
