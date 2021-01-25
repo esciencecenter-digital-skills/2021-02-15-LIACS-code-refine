@@ -291,6 +291,8 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
+{% elsif site.carpentry == "cr" %}
+{% include cr/schedule.html %}
 {% endif %}
 
 <hr/>
