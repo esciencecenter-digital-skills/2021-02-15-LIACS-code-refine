@@ -322,6 +322,8 @@ please preview your site before committing, and make sure to run
 {% include dc/syllabus.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/syllabus.html %}
+{% elsif site.carpentry == "cr" %}
+{% include cr/syllabus.html %}
 {% endif %}
 
 <hr/>
