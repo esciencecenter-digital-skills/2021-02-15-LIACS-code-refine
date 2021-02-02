@@ -150,7 +150,6 @@ address.
 DATE
 
 This block displays the date and links to Google Calendar.
-{% endcomment %}
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
@@ -158,6 +157,7 @@ This block displays the date and links to Google Calendar.
   {% include workshop_calendar.html %}
 </p>
 {% endif %}
+{% endcomment %}
 
 {% comment %}
 SPECIAL REQUIREMENTS
